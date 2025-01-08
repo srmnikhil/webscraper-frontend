@@ -21,7 +21,7 @@ function App() {
     setIsLoading(true);
     setMessage("");
 
-    fetch('http://localhost:5000/run-scraper', {
+    fetch('https://webscraper-backend-g8bs.onrender.com/run-scraper', {
       method: 'GET',
     })
       .then(response => response.json())
@@ -45,7 +45,7 @@ function App() {
   const checkBackend = () => {
     setIsLoadingBackend(true);
     setBackendMessage('');
-    fetch('http://localhost:5000/start', {
+    fetch('https://webscraper-backend-g8bs.onrender.com/start', {
       method: 'GET',
     })
       .then((response) => {
